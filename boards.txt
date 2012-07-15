@@ -30,7 +30,7 @@ atmega12848m.bootloader.low_fuses=0xFD
 atmega12848m.bootloader.high_fuses=0x9A
 atmega12848m.bootloader.extended_fuses=0xFF
 atmega12848m.bootloader.path=atmega
-atmega12848m.bootloader.file=ATmegaBOOT_168_atmega328_pro_8MHz.hex
+atmega12848m.bootloader.file=ATmegaBOOT_168_atmega1284p_8m.hex
 atmega12848m.bootloader.unlock_bits=0x3F
 atmega12848m.bootloader.lock_bits=0x0F
 
@@ -54,7 +54,7 @@ atmega1284.bootloader.file=ATmegaBOOT_168_atmega1284p.hex
 atmega1284.bootloader.unlock_bits=0x3F
 atmega1284.bootloader.lock_bits=0x0F
 
-#atmega1284.build.mcu=atmega1284p
-#atmega1284.build.f_cpu=8000000L
-#atmega1284.build.core=arduino
+atmega1284.build.mcu=atmega1284p
+atmega1284.build.f_cpu=16000000L
+atmega1284.build.core=arduino
 #

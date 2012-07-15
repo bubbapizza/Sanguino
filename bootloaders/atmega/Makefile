@@ -200,8 +200,15 @@ atmega1284p: TARGET = atmega1284p
 atmega1284p: MCU_TARGET = atmega1284p
 atmega1284p: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>4' '-DNUM_LED_FLASHES=0' '-DBAUD_RATE=57600'
 atmega1284p: AVR_FREQ = 16000000L 
-atmega1284p: LDSECTION  = --section-start=.text=0x1F800
+atmega1284p: LDSECTION  = --section-start=.text=0x1F000
 atmega1284p: $(PROGRAM)_atmega1284p.hex
+
+atmega1284p_8m: TARGET = atmega1284p
+atmega1284p_8m: MCU_TARGET = atmega1284p
+atmega1284p_8m: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>4' '-DNUM_LED_FLASHES=0' '-DBAUD_RATE=57600'
+atmega1284p_8m: AVR_FREQ = 8000000L
+atmega1284p_8m: LDSECTION  = --section-start=.text=0x1F000
+atmega1284p_8m: $(PROGRAM)_atmega1284p_8m.hex
 
 atmega1284p_isp: atmega1284p
 atmega1284p_isp: TARGET = atmega1284p

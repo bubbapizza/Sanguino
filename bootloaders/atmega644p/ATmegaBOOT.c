@@ -102,10 +102,10 @@
 /* define various device id's */
 /* manufacturer byte is always the same */
 #define SIG1	0x1E	// Yep, Atmel is the only manufacturer of AVR micros.  Single source :(
-//#if defined(__AVR_ATmega1284P__)
+#if defined(__AVR_ATmega1284P__)
 #define SIG2	0x97
 #define SIG3	0x05
-/*#elif defined(__AVR_ATmega644P__)
+#elif defined(__AVR_ATmega644P__)
 #define SIG2	0x96
 #define SIG3	0x0A
 #elif defined(__AVR_ATmega644__)
@@ -115,7 +115,7 @@
 #define SIG2	0x95
 #define SIG3	0x08
 #endif
-*/
+
 #define PAGE_SIZE		0x080U   //128 words
 #define PAGE_SIZE_BYTES	0x100U   //256 bytes
 
