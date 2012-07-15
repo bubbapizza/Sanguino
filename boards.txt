@@ -4,13 +4,14 @@ atmega644.name=Sanguino W/ ATmega644P
 
 atmega644.upload.protocol=stk500
 atmega644.upload.maximum_size=63488
-atmega644.upload.speed=38400
+atmega644.upload.speed=57600
 
 atmega644.bootloader.low_fuses=0xFF
-atmega644.bootloader.high_fuses=0xDC
-atmega644.bootloader.extended_fuses=0xFD
-atmega644.bootloader.path=atmega644p
-atmega644.bootloader.file=ATmegaBOOT_644P.hex
+atmega644.bootloader.high_fuses=0x9A
+atmega644.bootloader.extended_fuses=0xFF
+atmega644.bootloader.path=atmega
+atmega644.bootloader.file=ATmegaBOOT_168_atmega644p.hex
+#atmega644.bootloader.file=ATmegaBOOT_644P.hex
 atmega644.bootloader.unlock_bits=0x3F
 atmega644.bootloader.lock_bits=0x0F
 
@@ -47,7 +48,7 @@ atmega1284.upload.maximum_size=131072
 atmega1284.upload.speed=57600
 
 atmega1284.bootloader.low_fuses=0xFF
-atmega1284.bootloader.high_fuses=0x99
+atmega1284.bootloader.high_fuses=0x9A
 atmega1284.bootloader.extended_fuses=0xFF
 atmega1284.bootloader.path=atmega
 atmega1284.bootloader.file=ATmegaBOOT_168_atmega1284p.hex

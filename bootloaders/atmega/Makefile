@@ -205,10 +205,18 @@ atmega1284p: $(PROGRAM)_atmega1284p.hex
 
 atmega1284p_8m: TARGET = atmega1284p
 atmega1284p_8m: MCU_TARGET = atmega1284p
-atmega1284p_8m: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>4' '-DNUM_LED_FLASHES=0' '-DBAUD_RATE=57600'
+atmega1284p_8m: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>4' '-DNUM_LED_FLASHES=0' '-DBAUD_RATE=19200'
 atmega1284p_8m: AVR_FREQ = 8000000L
 atmega1284p_8m: LDSECTION  = --section-start=.text=0x1F000
 atmega1284p_8m: $(PROGRAM)_atmega1284p_8m.hex
+
+atmega644p: TARGET = atmega644p
+atmega644p: MCU_TARGET = atmega644p
+atmega644p: CFLAGS += '-DMAX_TIME_COUNT=F_CPU>>4' '-DNUM_LED_FLASHES=0' '-DBAUD_RATE=57600'
+atmega644p: AVR_FREQ = 16000000L
+atmega644p: LDSECTION  = --section-start=.text=0xF800
+atmega644p: $(PROGRAM)_atmega644p.hex
+
 
 atmega1284p_isp: atmega1284p
 atmega1284p_isp: TARGET = atmega1284p
