@@ -10,7 +10,7 @@ PROGRAM    = ATmegaBOOT_644P
 AVR_FREQ   = 16000000L
 
 MCU_TARGET = atmega644p
-LDSECTION  = --section-start=.text=0xF800
+LDSECTION  = --section-start=.text=0xF700
 
 OBJ        = $(PROGRAM).o
 OPTIMIZE   = -O2
